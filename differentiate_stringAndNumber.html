@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   enter value <input type="text" class="val" >
+
+   <button class="btn">submit</button>
+    <h2>string array</h2>
+   <div class="strarray">
+
+   </div>
+   <h2>number array</h2>
+
+   <div class="numarray">
+
+</div>
+   <script>
+        
+        let btn = document.querySelector(".btn");
+
+        let strarray = document.querySelector(".strarray");
+
+        let numarray = document.querySelector(".numarray");
+
+        let num_array = [];
+        let str_array = [];
+
+        btn.onclick = ()=>{
+            let value = document.querySelector(".val").value;
+            // console.log(Number(value));
+            let va = Number(value)
+            console.log(va);
+            if(isNaN(va)){
+                str_array.push(value)
+                strarray.innerHTML = str_array;
+
+            }
+            else{
+                num_array.push(value)
+                numarray.innerHTML = num_array;
+
+            }
+
+            console.log(str_array,num_array);            
+            // if()
+        }
+
+
+   </script>
+</body>
+</html>
