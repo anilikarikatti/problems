@@ -1,3 +1,3 @@
 # problems
 
-### these are the problems practised when im busy in exam but also intrested in coding ...
+### practised problems
