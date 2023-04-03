@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+function pr(){
+    return new Promise ((res,rej)=>{
+        setTimeout(function(){
+            res("ak") 
+      },0)
+    })
+}
+
+
+
+async function series(){
+let ans =await pr()
+console.log(ans);
+
+}
+
+
+function task(){
+    console.log("call back called");
+}
+
+
+setTimeout(task,0)
+
+console.log("namaste");
+console.log("namaste");
+console.log("namaste");
+console.log("namaste");
+console.log("namaste");
+console.log("namaste");
+console.log("namaste");
+console.log("namaste");
+console.log("namaste");
+console.log("namaste");
+console.log("namaste");
+console.log("namaste");
+series()
+
+console.log("namaste");
+
+// console.log(ans);
+
+</script>
+
+  
+</body>
+</html>
